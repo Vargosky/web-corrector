@@ -5,6 +5,7 @@ import requests
 from flask import Flask, render_template, request
 from docx import Document
 from dotenv import load_dotenv
+from io import BytesIO
 
 load_dotenv()
 app = Flask(__name__)
@@ -12,7 +13,8 @@ app = Flask(__name__)
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 def analizar_docx(file):
-    doc = Document(file)
+    file_stream = BytesIO(file.read())  # ✅ ← Esta línea es la clave
+    doc = Document(file_stream)
     resultado = []
     for para in doc.paragraphs:
         alineacion = para.alignment
@@ -29,6 +31,7 @@ def analizar_docx(file):
             }
             resultado.append(result)
     return resultado
+
 
 def content_to_texto_plano(lista):
     return "\n".join([
