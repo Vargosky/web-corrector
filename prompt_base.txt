@@ -1,0 +1,31 @@
+Evalúa el siguiente documento según estos criterios (1 punto por cada uno cumplido, total 12 puntos):
+
+1. El título debe contener “Curriculum”, “Currículum”, “Vitae” (se permite error leve)
+2. El título debe estar centrado
+3. El título debe tener tamaño de fuente 18
+4. El título debe estar en negrita
+5. Debe contener el subtítulo “Antecedentes personales”
+6. Debe contener el subtítulo “Antecedentes académicos” o “Antecedentes escolares”
+7. Debe contener el subtítulo “Antecedentes laborales”
+8. Debe contener el subtítulo “Habilidades”
+9. La fuente de cada subtítulo debe ser de tamaño 14
+10. El desarrollo de habilidades debe tener tamaño de fuente 12
+11. Ortografía (se permite un error leve)
+12. Presentación general y estructura
+
+Aquí está el contenido del archivo: {{nombre_archivo}}
+
+{{contenido}}
+
+Devuélveme:
+
+1. Una tabla como esta (exactamente este formato):
+
+| Criterio | Cumple (Sí/No) |
+|----------|----------------|
+| Título correcto | Sí |
+| Título centrado | No |
+
+2. El puntaje total sobre 12 (como "Puntaje total: X/12")
+
+3. Una retroalimentación breve.
